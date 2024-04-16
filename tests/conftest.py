@@ -12,6 +12,9 @@ def load_env():
     load_dotenv()
 
 
+selenoid_url = os.getenv("SELENOID_URL")
+
+
 @pytest.fixture(scope='function', autouse=True)
 def configuration(request):
     options = Options()
