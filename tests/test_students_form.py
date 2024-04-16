@@ -12,6 +12,7 @@ from demoqa_tests.data.users import User
 @allure.label("owner", "SADfranco")
 @allure.feature("Students registration form")
 @allure.link("'https://demoqa.com'", name="Testing")
+
 def test_fill_and_send():
     test_user = User(
         first_name='Akhil',
